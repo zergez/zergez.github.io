@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Game Portfolio – Maintenance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f6f7fb;
+            color: #222;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 16px 48px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            margin: 4px 0;
+            color: #555;
+        }
+
+        .games-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .game-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .game-info {
+            flex: 1;
+            display: flex;
+            gap: 12px;
+        }
+
+        .game-icon-wrapper {
+            flex-shrink: 0;
+        }
+
+        .game-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            object-fit: cover;
+            background: #eee;
+        }
+
+        .game-text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .game-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .game-platforms {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .game-desc {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .game-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .game-link {
+            font-size: 0.85rem;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: #eef1ff;
+            color: #3040a0;
+            border: 1px solid #d7ddff;
+            transition: background 0.15s ease, transform 0.1s ease;
+        }
+
+        .game-link:hover {
+            background: #dfe5ff;
+            transform: translateY(-1px);
+        }
+
+        .game-screenshot {
+            flex: 0 0 260px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .game-screenshot img {
+            width: 100%;
+            height: 100%;
+            max-height: 160px;
+            object-fit: cover;
+            display: block;
+            background: #e2e3ea;
+        }
+
+        @media (max-width: 900px) {
+            .game-card {
+                flex-direction: column;
+            }
+
+            .game-screenshot {
+                flex: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <h1>Welcome!</h1>
+        <p>The site is currently under maintenance.</p>
+        <p>In the meantime, you can check out some of these games:</p>
+    </header>
+
+    <section class="games-list">
+
+        <!-- The Hordes of the Dead -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <!-- Replace src with your real icon -->
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="The Hordes of The Dead icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">The Hordes of The Dead</h2>
+                    <div class="game-platforms">Steam – PC</div>
+                    <p class="game-desc">
+                        Third-person zombie shooter with gore, dismemberment and intense hordes.
+                        A love letter to classic survival horror with modern brutality.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://store.steampowered.com/app/766500/The_Hordes_of_the_Dead/" target="_blank" rel="noopener noreferrer">
+                            View on Steam
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <!-- Replace src with a real screenshot -->
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of The Hordes of The Dead" />
+            </div>
+        </article>
+
+        <!-- Code Zero -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Code Zero icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Code Zero (Early Access)</h2>
+                    <div class="game-platforms">Steam – PC</div>
+                    <p class="game-desc">
+                        Experimental horror and action in Early Access. Explore, fight and survive
+                        while the game grows with new mechanics and content.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://store.steampowered.com/app/1175490/Code_Zero/" target="_blank" rel="noopener noreferrer">
+                            View on Steam
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Code Zero" />
+            </div>
+        </article>
+
+        <!-- Dachshund Puppy Game -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Dachshund Puppy Game icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Dachshund Puppy Game</h2>
+                    <div class="game-platforms">iOS &amp; Android</div>
+                    <p class="game-desc">
+                        A cozy little game inspired by a real dachshund. Take care of your puppy,
+                        play with them and enjoy small moments of calm and affection.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://apps.apple.com/us/app/dachshund-puppy-game/id6499240290" target="_blank" rel="noopener noreferrer">
+                            iOS
+                        </a>
+                        <a class="game-link" href="https://play.google.com/store/apps/details?id=com.DaschundCompany.TejiElTejon" target="_blank" rel="noopener noreferrer">
+                            Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Dachshund Puppy Game" />
+            </div>
+        </article>
+
+        <!-- Sanic Ball -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Sanic Ball icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Sanic Ball</h2>
+                    <div class="game-platforms">iOS &amp; Android</div>
+                    <p class="game-desc">
+                        Fast, chaotic ball-rolling with ridiculous physics and meme energy.
+                        Try to keep control while everything is going way too fast.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://apps.apple.com/us/app/sanic-ball/id965630618" target="_blank" rel="noopener noreferrer">
+                            iOS
+                        </a>
+                        <a class="game-link" href="https://play.google.com/store/apps/details?id=com.Chateau.SanicNoAds" target="_blank" rel="noopener noreferrer">
+                            Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Sanic Ball" />
+            </div>
+        </article>
+
+        <!-- Go Sanic Goo -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Go Sanic Goo icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Go Sanic Goo</h2>
+                    <div class="game-platforms">iOS &amp; Android</div>
+                    <p class="game-desc">
+                        A chaotic meme-game full of fast movement, weird jokes and over-the-top
+                        moments. Perfect for quick, silly sessions.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://apps.apple.com/us/app/go-sanic-goo-mlg/id994783907" target="_blank" rel="noopener noreferrer">
+                            iOS
+                        </a>
+                        <a class="game-link" href="https://play.google.com/store/apps/details?id=com.hyperMemes.veryfasthedgehg" target="_blank" rel="noopener noreferrer">
+                            Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Go Sanic Goo" />
+            </div>
+        </article>
+
+        <!-- Pop it Sanic Goo! -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Pop it Sanic Goo icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Pop it Sanic Goo!</h2>
+                    <div class="game-platforms">iOS &amp; Android</div>
+                    <p class="game-desc">
+                        Combines the relaxing feeling of pop-it toys with the Sanic universe.
+                        Casual, simple and made to de-stress for a few minutes.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://apps.apple.com/us/app/popit-sanic-go/id1445776481" target="_blank" rel="noopener noreferrer">
+                            iOS
+                        </a>
+                        <a class="game-link" href="https://play.google.com/store/apps/details?id=com.chateaustudios.SanicPopITAndroid" target="_blank" rel="noopener noreferrer">
+                            Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Pop it Sanic Goo!" />
+            </div>
+        </article>
+
+        <!-- Sanic Clicker -->
+        <article class="game-card">
+            <div class="game-info">
+                <div class="game-icon-wrapper">
+                    <img class="game-icon" src="https://via.placeholder.com/64" alt="Sanic Clicker icon" />
+                </div>
+                <div class="game-text">
+                    <h2 class="game-title">Sanic Clicker</h2>
+                    <div class="game-platforms">Android &amp; Web</div>
+                    <p class="game-desc">
+                        Simple and addictive clicker/idle game. Tap, stack points and unlock more
+                        chaos while the numbers keep going up.
+                    </p>
+                    <div class="game-links">
+                        <a class="game-link" href="https://play.google.com/store/apps/details?id=com.chateaustudios.sanicclickmaniaAndroid" target="_blank" rel="noopener noreferrer">
+                            Android
+                        </a>
+                        <a class="game-link" href="https://sanicdahedgehog.com/SanicClicker/index.html" target="_blank" rel="noopener noreferrer">
+                            Web version
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-screenshot">
+                <img src="https://via.placeholder.com/480x270" alt="Screenshot of Sanic Clicker" />
+            </div>
+        </article>
+
+    </section>
+</div>
+</body>
+</html>
